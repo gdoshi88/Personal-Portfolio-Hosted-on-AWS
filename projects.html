@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gautam Doshi Portfolio</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/lux/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-hVpXlpdRmJ+uXGwD5W6HZMnR9ENcKVRn855pPbuI/mwPIEKAuKgTKgGksVGmlAvt"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="static/style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="static/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="static/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="static/favicon/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="index.html">
+        <div class="logo-image">
+              <img src="images/signatureGD.png" class="img-fluid">
+        </div>
+  </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarColor01"
+        aria-controls="navbarColor01"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"
+              >Home <span class="sr-only"></span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="projects.html"
+              >Portfolio <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resume.html"
+              >Resume <span class="sr-only"></span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html"
+              >Contact <span class="sr-only"></span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </br>
+</br>
+    <h3 align="center">Project Portfolio</h3>
+          <br>
+          <br>
+          <br>
+          <ul class="list-unstyled">
+            <li class="media d-flex align-items-center">
+              <a href="http://fertilitytestusa.com/" target="_blank">
+              <img src="images/ftugif.gif" class="mr-3 imagesize" alt="fertilitytestusa">
+            </a>
+              <div class="media-body" align="center">
+                <h5 align="center" class="mt-0 mb-1"><u>Fertility Test U.S.A.</u></h5>
+              </br>
+                <h6><i>Reason for choosing this topic:</i></h6>
+                <p align="left">Reports in the last decade have been indicating the drop in overall fertility for men. This application was built to analyze general data in a mans life using a trained deep neural machine learning model and return a result of fertile or infertile and the infertility percentage.</p>
+              <h6><i>Tools Utilized:</i></h6>
+              <p align="left">NodeJS, Python 3, AWS Lambda, AWS API Gateway, AWS Route53, AWS S3, HTML, CSS, Bootstrap, Microsoft Azure Machine Learning</p>
+              <h6><i>Application Architecture:</i></h6>
+              <p align="left">The front end of the application is designed and implemented using HTML, Bootstrap and CSS. The website is hosted statically on AWS S3. When the submit button is clicked, the data gathered from the user is transferred to an API which was created using AWS API Gateway. The API triggers the AWS Lambda functions. The Lambda functions take the data and send it out to Microsoft Azure Machine Learning where the trained machine learning model calculates the users fertility. The results are then returned via the Lambda functions, back to the API and displayed on the static website. AWS Route53 assigns a new domain name to the static website. The two Lambda functions are written in NodeJS and Python, respectively.</p>
+            </br>
+                <!-- <h5 align="center"><a href="http://fertilitytestusa.com/" target="_blank">http://fertilitytestusa.com/</a></h5> -->
+                <button class="appbuttonstyling" onclick=" window.open('http://fertilitytestusa.com/','_blank')">Go To Application</button>
+              </div>
+            </li>
+        <hr size="15" width="100%" align="left" color="black">
+        <li class="media d-flex align-items-center">
+          <a href="https://laptopfinder.herokuapp.com/homepage/index.html" target="_blank">
+          <img src="images/lfgif.gif" class="mr-3 imagesize" alt="laptopfinder">
+        </a>
+          <div class="media-body" align="center">
+            <h5 align="center" class="mt-0 mb-1"><u>Laptop Finder</u></h5>
+          </br>
+            <h6><i>Reason for choosing this topic:</i></h6>
+            <p align="left">We live in a world where new technology is introduced everyday. In this fast paced tech world, laptops are updated quicker than other technologies. This being the case, Laptop Finder scans two major laptop retailers and helps the user determine which laptop suits them and at what price.
+            </p>
+          <h6><i>Tools Utilized:</i></h6>
+          <p align="left">Python, Pandas, NumPy, Splinter, Selenium, BeautifulSoup, SQLAlchemy, JSON, Flask, PostgreSQL, HTML5, CSS3, Bootstrap 4, Leaflet, Algolia, DataTables.JS, JQuery, Heroku, D3.js, JavaScript</p>
+          <h6><i>Application Architecture:</i></h6>
+          <p align="left">Completed the ETL process by web-scraping the Best Buy and Fry’s Electronics websites; transforming the collected data into comparable variables; and, stored them into a PostgreSQL database. Using Pandas, Splinter, BeautifulSoup, SQLAlchemy, pulled in store locations and laptop sales data from the Best Buy developer API and Fry’s Electronics website. Created a web application using Flask, HTML5, CSS3, Bootstrap 4, Leaflet, Algolia, DataTables.js and JavaScript. Hosted the application on Heroku.</p>
+        </br>
+        <button class="appbuttonstyling" onclick=" window.open('https://laptopfinder.herokuapp.com/homepage/index.html','_blank')">Go To Application</button>
+          </div>
+        </li>
+        <hr size="15" width="100%" align="left" color="black">
+        <li class="media d-flex align-items-center">
+          <a href="https://laptopfinder.herokuapp.com/api/data" target="_blank">
+          <img src="images/laptopfinderapiscreenshot.png" class="mr-3 imagesize" alt="laptopfinderapi">
+        </a>
+          <div class="media-body" align="center">
+            <h5 align="center" class="mt-0 mb-1"><u>Laptop Finder API</u></h5>
+          </br>
+            <h6><i>Reason for choosing this topic:</i></h6>
+            <p align="left">Collecting data for an application is difficult to do when the source of data is complicated. This API is accessible by anyone that wants to get complete information about the laptops that are sold by Best Buy and Fry’s Electronics. This API not only provides laptop data to users, it is also utilized by the Laptop Finder app to create data tables and charts comparing different laptops.</p>
+          <h6><i>Tools Utilized:</i></h6>
+          <p align="left">Python, Flask, Pandas, SQLAlchemy, PostgreSQL, NumPy, Heroku, JavaScript, JQuery, JSON</p>
+          <h6><i>Application Architecture:</i></h6>
+          <p align="left">The data that was extracted, transformed and loaded(ETL) into a database in the Laptop Finder application is now sent via Flask to an API route on the web application, where it is displayed in a JSON format.</p>
+        </br>
+        <button class="appbuttonstyling" onclick=" window.open('https://laptopfinder.herokuapp.com/api/data','_blank')">Go To Application</button>
+          </div>
+        </li>
+          </ul>
+        </br>
+      </br>
+    </br>
+  </br>
+  </br>
+    <footer class="page-footer font-small blue">
+      <div class="footer-copyright text-center py-3">
+        © 2020 Copyright:
+        <a href="https://www.gautambdoshi.com/" target="_blank">gautambdoshi.com</a>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,134 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+.logo-image {
+  width: 150px;
+  height: 46px;
+  border-radius: 50%;
+  overflow: visible;
+  margin-top: -20px;
+}
+
+.logo-image img {
+  transition: transform 1.5s ease;
+}
+
+.logo-image:hover img {
+  transform: scale(1.08);
+}
+
+.login {
+  text-align: right;
+}
+
+.gdphoto {
+  width: 300x;
+  height: 450px;
+  border-color: black;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.col-4 {
+  padding-left: 40px;
+}
+
+.col-8 {
+  padding-right: 40px;
+}
+
+.gddescription {
+  word-wrap: break-word;
+}
+
+.form-size {
+  width: 500px;
+  align-items: center;
+}
+
+.form-center {
+  width: 500px;
+  height: 500px;
+  margin: auto;
+}
+
+.submitbutton {
+  width: 500px;
+  height: 50px;
+}
+
+.form-text-color {
+  color: #383736;
+}
+
+.backButton {
+  width: 500px;
+  height: 50px;
+}
+
+.button {
+  width: 500px;
+  height: 50px;
+}
+
+.float {
+  float: left;
+  margin: 35px;
+}
+
+.floattwo {
+  float: left;
+  margin: 22px;
+}
+
+.floatthree {
+  float: left;
+  margin: 0px;
+  position: relative;
+  left: 35px;
+}
+
+.imagesize {
+  height: 325px;
+  width: 525px;
+  vertical-align: middle;
+}
+
+.appbuttonstyling {
+  background-color: #404040;
+  color: white;
+  padding: 20px 34px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: 2px solid black;
+}
+
+.font-size-mainpage {
+  font-size: 16px;
+  font-style: oblique;
+  font-weight: bold;
+}
+
+ul {
+  display: inline-block;
+}
+
+/* .list-stuff {
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+} */
