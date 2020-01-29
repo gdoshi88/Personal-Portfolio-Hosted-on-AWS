@@ -30,7 +30,10 @@
 <link rel="icon" type="image/png" sizes="16x16" href="static/favicon/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 <script type="text/javascript">
-  function recaptcha_callback() {$('submit').removeAttr('disabled');};</script>
+  function recaptcha_callback() {
+  $('#submit').removeAttr('disabled');
+   };                                  
+</script>
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>  
 <script type="text/javascript">
@@ -144,7 +147,7 @@
                   <div align="center" class="g-recaptcha" data-sitekey="6LfbJNAUAAAAAGCS_S2k6uiymgyqMnKkAMZGu2gF" data-callback="recaptcha_callback"></div>
                   <button disabled="disabled" id="submit" class="submitbutton" align="center" type="submit" class="btn btn-default">Submit</button>
                 </form>
-            </div>
+            </divi>
           </div>
         </br>
       </br>
