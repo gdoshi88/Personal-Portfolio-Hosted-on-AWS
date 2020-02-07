@@ -59,11 +59,11 @@
                   'company': company,
                   'message': message,
               }),
-              success: function(res){
-                  $('#form-response').text('Email was sent.');
+              success: function(){
+                  $('#contact-form').text('Thank you! Your email was sent.');
               },
               error: function(){
-                  $('#form-response').text('Error.');
+                  $('#contact-form').text('Error, please try to submit the form again.');
               }
           });
 
